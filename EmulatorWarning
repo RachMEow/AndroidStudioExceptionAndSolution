@@ -1,0 +1,4 @@
+//Warning:
+Emulator: [1308]:WARNING:android/android-emu/android/base/async/AsyncSocketServer.cpp:99:Error when accepting host connectionError message: Unknown error
+//Solution: Not found
+//Note: However, the app can run :D
