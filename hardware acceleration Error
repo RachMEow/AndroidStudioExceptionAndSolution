@@ -1,0 +1,18 @@
+Error:
+Emulator: ERROR: x86 emulation currently requires hardware acceleration!
+
+Solution:
+1. Open SDK Manager (In Android Studio, go to Tools > Android > SDK Manager) and Download Intel x86 Emulator Accelerator (HAXM installer) if you haven't.
+2. Now go to your SDK directory C:\users\%USERNAME%\AppData\Local\Android\sdk\extras\intel\Hardware_Accelerated_Execution_Manager\ and run the file named intelhaxm-android.exe.
+3. click Delete button on the install wizard
+4. run intelhaxm-android.exe again
+In case you get an error like "Intel virtualization technology (vt,vt-x) is not enabled". Go to your BIOS settings and enable Hardware Virtualization.
+
+5.BIOS settings for enable Hardware Virtualization:
+5.1. restart machine
+5.2. press F2 (Windowa 10), leads to BIOS settings
+5.3. Advanced --> CPU Condiguration --> enable Hardware Virtualization
+5.4. save and exit
+
+6. run intelhaxm-android.exe again, install Intel x86 Emulator Accelerator
+7. Restart Android Studio and then try to start the AVD again.
