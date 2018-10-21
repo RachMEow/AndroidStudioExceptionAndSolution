@@ -1,0 +1,23 @@
+Error:
+18:54	Gradle sync failed: Could not find com.google.gms: google-services: 4.0.1.
+		Searched in the following locations:
+		https://dl.google.com/dl/android/maven2/com/google/gms/ google-services/ 4.0.1/ google-services- 4.0.1.pom
+		https://dl.google.com/dl/android/maven2/com/google/gms/ google-services/ 4.0.1/ google-services- 4.0.1.jar
+		https://jcenter.bintray.com/com/google/gms/ google-services/ 4.0.1/ google-services- 4.0.1.pom
+		https://jcenter.bintray.com/com/google/gms/ google-services/ 4.0.1/ google-services- 4.0.1.jar
+		Required by:
+		project :
+    
+    Solution:
+    -comment those lines associated with Google services in gradles in 
+    1. app module //    implementation 'com.google.firebase:firebase-core:16.0.1'
+    2. project module // classpath 'com.google.gms:google-services:4.0.1'
+    -sync Gradle, make sure there is no error
+   -Then go Tools --> FireBase --> RealTime Database --> save and retrieve data
+    -do whatever it tells you to do
+    -Remember change this:
+    compile 'com.google.firebase:firebase-database:16.0.1:15.0.0'
+    to: compile 'com.google.firebase:firebase-database:16.0.1'
+    -sync again!
+    
+    
